@@ -14,7 +14,7 @@
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #ffafc7;
 }
 
 .navbar h1 {
@@ -47,9 +47,14 @@
 /* blog previews/list */
 .blog-preview {
 
-    padding: 10px 16px;
     margin: 20px 0;
-    border-bottom: 1px solid #fafafa;
+    border-bottom: 1px solid #dbdbdb54;
+    border-radius: 5px;
+}
+
+.blog-preview a > div {
+
+    padding: 10px 16px;
 }
 
 .blog-preview:hover {
@@ -142,6 +147,5 @@
 }
 
 .not-found a {
-
     color: #f1356d;
 }

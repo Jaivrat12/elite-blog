@@ -1,22 +1,22 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Navbar from './Navbar';
-import Home from './Home';
-import Create from './Create';
-import BlogDetails from './BlogDetails';
-import NotFound from './NotFound';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Create from './Components/Create';
+import BlogDetails from './Components/BlogDetails';
+import NotFound from './Components/NotFound';
 
 function App() {
 
 	return (
 
 		<Router>
-
 			<div className="App">
 				<Navbar />
 				<div className="content">
+
 					<Switch>
-						
+
 						<Route exact path="/">
 							<Home />
 						</Route>
@@ -34,9 +34,9 @@ function App() {
 						</Route>
 
 					</Switch>
+
 				</div>
 			</div>
-
 		</Router>
 	);
 }
