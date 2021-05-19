@@ -27,6 +27,8 @@ body, a {
 
 .navbar .links {
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar a {
