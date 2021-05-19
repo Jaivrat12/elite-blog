@@ -17,15 +17,15 @@ function App() {
 
 					<Switch>
 
-						<Route exact path="/">
+						<Route exact path="/elite-blog/">
 							<Home />
 						</Route>
 
-						<Route path="/create">
+						<Route path="/elite-blog/create">
 							<Create />
 						</Route>
 
-						<Route path="/blogs/:id">
+						<Route path="/elite-blog/blogs/:id">
 							<BlogDetails />
 						</Route>
 
