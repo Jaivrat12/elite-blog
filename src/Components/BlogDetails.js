@@ -19,6 +19,7 @@ const BlogDetails = () => {
     return (
 
         <div className="blog-details">
+
             { isPending && <div>Loading...</div> }
             { error && <div> { error } </div> }
             { blog && (
@@ -30,6 +31,7 @@ const BlogDetails = () => {
                     <button onClick={ handleClick }>Delete Blog</button>
                 </article>
             )}
+
         </div>
     );
 }

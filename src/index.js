@@ -12,5 +12,5 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-const DB_URL = 'http://localhost:8000/blogs/';
+const DB_URL = 'https://jsonplaceholder.typicode.com/posts/';
 export default DB_URL;
