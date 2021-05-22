@@ -6,7 +6,7 @@ const BlogList = ({ blogs, title }) => {
                  'Elwyn.Skiles', 'Maxime_Nienow', 'Delphine', 'Moriah.Stanton'];
 
     return (
-        
+
         <div className="blog-list">
 
             <h2>{ title }</h2>
@@ -14,7 +14,12 @@ const BlogList = ({ blogs, title }) => {
                 blogs.map(blog => (
 
                     <div className="blog-preview" key={ blog.id }>
-                        <Link to={ `/blogs/${ blog.id }` }>
+                        <Link
+                            to={{
+                                pathname: `/blogs/${ blog.id }`,
+                                author: users[blog.userId - 1]
+                            }}
+                        >
                             <div>
                                 <h2>{ blog.title }</h2>
                                 <p>Written by: { users[blog.userId - 1] }</p>
