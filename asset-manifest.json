@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/elite-blog/static/css/main.fac34c07.chunk.css",
-    "main.js": "/elite-blog/static/js/main.89b74214.chunk.js",
-    "main.js.map": "/elite-blog/static/js/main.89b74214.chunk.js.map",
+    "main.css": "/elite-blog/static/css/main.308dbba8.chunk.css",
+    "main.js": "/elite-blog/static/js/main.b9bbd3d1.chunk.js",
+    "main.js.map": "/elite-blog/static/js/main.b9bbd3d1.chunk.js.map",
     "runtime-main.js": "/elite-blog/static/js/runtime-main.f9bb5d88.js",
     "runtime-main.js.map": "/elite-blog/static/js/runtime-main.f9bb5d88.js.map",
     "static/js/2.f0ee682d.chunk.js": "/elite-blog/static/js/2.f0ee682d.chunk.js",
     "static/js/2.f0ee682d.chunk.js.map": "/elite-blog/static/js/2.f0ee682d.chunk.js.map",
     "index.html": "/elite-blog/index.html",
-    "static/css/main.fac34c07.chunk.css.map": "/elite-blog/static/css/main.fac34c07.chunk.css.map",
+    "static/css/main.308dbba8.chunk.css.map": "/elite-blog/static/css/main.308dbba8.chunk.css.map",
     "static/js/2.f0ee682d.chunk.js.LICENSE.txt": "/elite-blog/static/js/2.f0ee682d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f9bb5d88.js",
     "static/js/2.f0ee682d.chunk.js",
-    "static/css/main.fac34c07.chunk.css",
-    "static/js/main.89b74214.chunk.js"
+    "static/css/main.308dbba8.chunk.css",
+    "static/js/main.b9bbd3d1.chunk.js"
   ]
 }
