@@ -87,6 +87,7 @@ body, a {
 .blog-preview {
 
     margin: 20px 0;
+    height: 100px;
     border-bottom: 1px solid #dbdbdb54;
     border-radius: 5px;
 }
@@ -120,7 +121,7 @@ body, a {
     margin-bottom: 10px;
 }
 
-.blog-details div {
+.blog-details .blog-body {
     margin: 20px 0;
 }
 

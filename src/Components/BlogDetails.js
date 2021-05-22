@@ -2,12 +2,13 @@ import { useHistory, useLocation, useParams } from 'react-router-dom';
 
 import DB_URL from '..';
 import useFetch from '../Hooks/useFetch';
+import SkeletonBlogDetails from '../Skeletons/SkeletonBlogDetails';
 
 const BlogDetails = () => {
 
     const location = useLocation();
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch(DB_URL + id);
+    const { data: blog, error } = useFetch(DB_URL + id);
 
     const history = useHistory();
 
@@ -21,14 +22,14 @@ const BlogDetails = () => {
 
         <div className="blog-details">
 
-            { isPending && <div>Loading...</div> }
+            { !blog && !error && <SkeletonBlogDetails /> }
             { error && <div> { error } </div> }
             { blog && (
 
                 <article>
                     <h2>{ blog.title }</h2>
                     <p>Written by: { location.author }</p>
-                    <div>{ blog.body }</div>
+                    <div className="blog-body">{ blog.body }</div>
                     <button onClick={ handleClick }>Delete Blog</button>
                 </article>
             )}

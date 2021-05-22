@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 const useFetch = (url) => {
 
     const [data, setData] = useState(null);
-    const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -21,23 +20,26 @@ const useFetch = (url) => {
             .then(data => {
 
                 setData(data);
-                setIsPending(false);
                 setError(null);
             })
             .catch(error => {
             
                 if(error !== 'AbortError') {
 
-                    setError(error.message);
-                    setIsPending(false);
+                    if(error.message === 'Unexpected token < in JSON at position 0')
+                        setError('');
+                    else {
+
+                        setError('An Error Occured (x_x)');
+                        console.log(error.message);
+                    }
                 }
             });
         
         return () => abortCtrl.abort();
-        
     }, [url]);
 
-    return { data, isPending, error };
+    return { data, error };
 };
 
 export default useFetch;

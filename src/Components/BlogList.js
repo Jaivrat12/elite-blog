@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const BlogList = ({ blogs, title }) => {
+const BlogList = ({ blogs }) => {
 
     let users = ['Bret', 'Antonette', 'Samantha', 'Karianne', 'Kamren', 'Leopoldo_Corkery',
                  'Elwyn.Skiles', 'Maxime_Nienow', 'Delphine', 'Moriah.Stanton'];
@@ -9,7 +9,6 @@ const BlogList = ({ blogs, title }) => {
 
         <div className="blog-list">
 
-            <h2>{ title }</h2>
             {
                 blogs.map(blog => (
 
